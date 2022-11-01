@@ -105,7 +105,16 @@ function uniquifyArray() {}
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(x, y) {
+    if (x.includes(y) === true) {
+      return true
+    } else if (x.length === 0) {
+      return null
+    } else {
+      return false
+    }
+    
+}
 
 
 
@@ -124,7 +133,14 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes(wordsCount, x) {
+  
+  let count = 0;
+  for (let countOfWords of wordsCount ){
+      if (countOfWords.indexOf(x) >= 0) {
+        return count += 1
+      }
+}}
 
 
 
